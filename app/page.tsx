@@ -11,7 +11,7 @@ type Props = {};
 
 const HomePage = (props: Props) => {
   return (
-    <div className="p-5 lg:p-0 overflow-y-scroll h-screen text-white flex flex-col justify-start sm:justify-center items-center">
+    <div className="px-5 overflow-y-scroll scrollbar-track-gray-400/20 scrollbar-thumb-[#FFF] scrollbar-thumb-rounded-xl scrollbar-thin h-screen text-white flex flex-col justify-start sm:justify-center items-center">
       <h1 className="text-5xl font-bold mb-20">ChatGPT</h1>
 
       <div className="flex flex-col sm:flex-row space-x-2 space-y-5 sm:space-y-0 text-center">
