@@ -11,10 +11,7 @@ type Props = {
 
 function useMessages({ session, id }: Props) {
   const [messages, loading, error] = useCollection(
-    query(
-      collection(db, USERS, session?.user?.email!, CHATS, id, MESSAGES),
-      orderBy("createdAt", "asc")
-    )
+    collection(db, USERS, session?.user?.email!, CHATS, id, MESSAGES)
   );
 
   return messages;

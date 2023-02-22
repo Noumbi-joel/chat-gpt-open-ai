@@ -1,7 +1,7 @@
-import { collection } from "firebase/firestore";
+import { collection, orderBy, query } from "firebase/firestore";
 import { Session } from "next-auth";
 import { useCollection } from "react-firebase-hooks/firestore";
-import { CHATS, USERS } from "../constants";
+import { CHATS, CREATED_AT, USERS } from "../constants";
 import { db } from "../lib/firebase.config";
 
 type Props = {
@@ -10,7 +10,11 @@ type Props = {
 
 function useChats({ session }: Props) {
   const [chats, loading, error] = useCollection(
-    session && collection(db, USERS, session?.user?.email!, CHATS)
+    session &&
+      query(
+        collection(db, USERS, session?.user?.email!, CHATS),
+        orderBy(CREATED_AT, "asc")
+      )
   );
 
   return chats;
