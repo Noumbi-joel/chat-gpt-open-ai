@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 
 // comp
-import { Login, SessionProvider, Sidebar } from "../components";
+import { ClientProvider, Login, SessionProvider, Sidebar } from "../components";
 
 // next auth
 import { getServerSession } from "next-auth";
@@ -28,6 +28,8 @@ export default async function RootLayout({
               </div>
 
               {/* ClientProvider - Notifications */}
+              <ClientProvider/>
+
               <div className="bg-[#343541] flex-1">{children}</div>
             </div>
           )}

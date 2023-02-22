@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+// comp
+import { Chat, ChatInput } from "../../../components";
 
-const ChatPage = (props: Props) => {
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
+const ChatPage = ({ params: { id } }: Props) => {
   return (
-    <div>ChatPage</div>
-  )
-}
+    <div className="flex flex-col h-screen overflow-hidden">
+      {/* chat */}
+      <Chat chatId={id} />
 
-export default ChatPage
+      {/* chat input */}
+      <ChatInput chatId={id} />
+    </div>
+  );
+};
+
+export default ChatPage;
