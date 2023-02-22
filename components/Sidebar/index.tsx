@@ -1,14 +1,20 @@
 "use client";
 
-// comp
+// next
 import { useSession, signOut } from "next-auth/react";
 import Image from "next/image";
-import { NewChat } from "..";
+
+// comp
+import { ChatRow, NewChat } from "..";
+
+// hooks
+import useChats from "../../hooks/useChats";
 
 type Props = {};
 
 const SideBar = (props: Props) => {
   const { data: session } = useSession();
+  const chats = useChats({ session });
   return (
     <div className="p-2 flex flex-col h-screen">
       <div className="flex-1">
@@ -19,6 +25,9 @@ const SideBar = (props: Props) => {
           <div>{/* Model Selection */}</div>
 
           {/* Chat list */}
+          {chats?.docs?.map((chat) => (
+            <ChatRow key={chat.id} id={chat.id} />
+          ))}
         </div>
       </div>
 
@@ -33,6 +42,7 @@ const SideBar = (props: Props) => {
           width={48}
           height={48}
           alt="user image"
+          title="sign out"
         />
       )}
     </div>
