@@ -1,6 +1,6 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { Session } from "next-auth";
-import { AVATAR, CHATS, MESSAGES, USERS } from "../constants";
+import { AVATAR, BOT_URL, CHATS, MESSAGES, USERS } from "../constants";
 import { db } from "../lib/firebase.config";
 import toast from "react-hot-toast";
 
@@ -10,7 +10,6 @@ type Props = {
   setMsg: React.Dispatch<React.SetStateAction<string>>;
   session: Session | null;
   chatId: string;
-  model: string;
 };
 
 export const sendMessage = async ({
@@ -19,7 +18,6 @@ export const sendMessage = async ({
   setMsg,
   session,
   chatId,
-  model,
 }: Props) => {
   e.preventDefault();
 
@@ -45,20 +43,22 @@ export const sendMessage = async ({
 
   // toast notification
   const notification = toast.loading("ChatGPT is thinking");
+
   await fetch("/api/askQuestion", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "content-type": "application/json",
     },
     body: JSON.stringify({
-      msg: input,
-      chatId,
-      model,
+      msg,
       session,
+      chatId,
     }),
-  }).then((res) =>
-    toast.success("ChatGPT has responded!", {
-      id: notification,
-    })
-  );
+  })
+    .then((res) =>
+      toast.success("ChatGPT has responded!", {
+        id: notification,
+      })
+    )
+    .catch((err) => toast.error(err?.message));
 };

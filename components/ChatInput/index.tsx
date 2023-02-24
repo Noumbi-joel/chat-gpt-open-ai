@@ -17,16 +17,12 @@ type Props = {
 const ChatInput = ({ chatId }: Props) => {
   const [msg, setMsg] = useState("");
   const { data: session } = useSession();
-  // useSWR to get model
-  const model = "text-davinci-003";
 
   return (
     <div className="z-20 bg-gray-700/50 text-gray-400 rounded-lg text-sm">
       <form
         className="p-5 space-x-5 flex"
-        onSubmit={(e) =>
-          sendMessage({ e, msg, setMsg, session, chatId, model })
-        }
+        onSubmit={(e) => sendMessage({ e, msg, setMsg, session, chatId })}
       >
         <input
           required
