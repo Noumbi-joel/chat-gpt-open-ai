@@ -14,12 +14,11 @@ Chat GPT Clone @openai
 
 
 ## Screenshots
-![Image]([https://drive.google.com/uc?export=download&id=1WwuXX7JaE9XUeE_Ok96Kb4k74o6J8VG9](https://drive.google.com/file/d/1WwuXX7JaE9XUeE_Ok96Kb4k74o6J8VG9/view?usp=share_link))
+![chat-gpt-open-ai-signin](https://user-images.githubusercontent.com/62994009/221156657-eb2de27c-3ce4-44a9-b775-1b3254b9e0a0.PNG)
 
-![Image](https://drive.google.com/uc?export=download&id=1XaZbeBBiCF-AVeuzZXZi__XHeSeY78rM)
+![chat-gpt-open-ai-new](https://user-images.githubusercontent.com/62994009/221156728-6be028d6-b4fe-4bcc-b931-4e55d2f4e86f.PNG)
 
-![Image](https://drive.google.com/uc?export=download&id=1jrEiXWyKwzRKCpmPOt_X1caIZckhCJqV.png)
-
+![chat-gpt-open-ai](https://user-images.githubusercontent.com/62994009/221156802-8dac5637-89c4-464d-aaac-318fc2516a85.PNG)
 
 ## Thanking
 https://rapidapi.com/user/florianbreut
