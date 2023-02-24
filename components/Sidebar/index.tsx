@@ -14,15 +14,22 @@ type Props = {};
 
 const SideBar = (props: Props) => {
   const { data: session } = useSession();
-  const chats = useChats({ session });
+  const { chats, loading } = useChats({ session });
   return (
-    <div className="p-2 flex flex-col h-screen">
+    <div className="p-2 flex flex-col h-screen w-full">
       <div className="flex-1">
         <div>
           {/* New Chat */}
           <NewChat />
 
           <div>{/* Model Selection */}</div>
+
+          {/* loading chats */}
+          {loading && (
+            <div className="mt-2 animate-pulse text-center text-white">
+              <p>Loading Chats...</p>
+            </div>
+          )}
 
           {/* Chat list */}
           {chats?.docs?.map((chat) => (

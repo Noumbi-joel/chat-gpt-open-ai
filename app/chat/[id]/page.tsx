@@ -13,7 +13,7 @@ const ChatPage = ({ params: { id } }: Props) => {
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       {/* chat */}
-      <Chat chatId={id} />
+      <Chat id={id} />
 
       {/* chat input */}
       <ChatInput chatId={id} />

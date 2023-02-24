@@ -17,7 +17,7 @@ function useChats({ session }: Props) {
       )
   );
 
-  return chats;
+  return { chats, loading };
 }
 
 export default useChats;
