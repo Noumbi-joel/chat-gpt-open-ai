@@ -1,27 +1,25 @@
-# Next.js + Tailwind CSS Example
+## Project Title
+Chat GPT Clone @openai
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Project Description
+* Chat GPT clone is a web app in which you can talk everything you want with a partial open source AI called Chat GPT.
+* I've decided to use: **Next.js** because it is a very powerful backend framework that helps you to build powerful and scalable web apps and also because it implements Static Side Generation, Incremental Side Regeneration and Server Side Generation.**Typescript** is a javascript superset and i used it because of the structural aspect of the language (**types**, **interfaces**, **classes**...). **TailwindCSS** is a very nice library that is used to facilitate the writting of **CSS** in just few lines. **Firebase Firestore** is used in this project because it's very powerful and easily maintanable cloud database.
+* During the development i faced off the difficulty of using the firebase-admin library because when you ask a question to chat gpt it will reply you by saving his response in the database so he needs to have access rights to complete the task.
 
-## Deploy your own
+## How to Use
+* You need firstly to authenticate yourself using google authentication, Then, you'll see the home page
+* You have to create a chat in order to communicate with the AI.
+* When you reach the chat interface, just write something in the input field and wait a bit while **Chat GPT is thinking...**
+* By the way, you can create multiple chats if you want to talk differents topics for example.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Screenshots
+![App Screenshot](https://drive.google.com/uc?export=download&id=1WwuXX7JaE9XUeE_Ok96Kb4k74o6J8VG9)
 
-## How to use
+![App Screenshot](https://drive.google.com/uc?export=download&id=1XaZbeBBiCF-AVeuzZXZi__XHeSeY78rM)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+![App Screenshot](https://drive.google.com/uc?export=download&id=1jrEiXWyKwzRKCpmPOt_X1caIZckhCJqV)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Thanking
+https://rapidapi.com/user/florianbreut
