@@ -14,11 +14,11 @@ Chat GPT Clone @openai
 
 
 ## Screenshots
-![Image](https://drive.google.com/uc?export=download&id=1WwuXX7JaE9XUeE_Ok96Kb4k74o6J8VG9)
+![Image]([https://drive.google.com/uc?export=download&id=1WwuXX7JaE9XUeE_Ok96Kb4k74o6J8VG9](https://drive.google.com/file/d/1WwuXX7JaE9XUeE_Ok96Kb4k74o6J8VG9/view?usp=share_link))
 
 ![Image](https://drive.google.com/uc?export=download&id=1XaZbeBBiCF-AVeuzZXZi__XHeSeY78rM)
 
-![Image](https://drive.google.com/uc?export=download&id=1jrEiXWyKwzRKCpmPOt_X1caIZckhCJqV)
+![Image](https://drive.google.com/uc?export=download&id=1jrEiXWyKwzRKCpmPOt_X1caIZckhCJqV.png)
 
 
 ## Thanking
